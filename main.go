@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -176,6 +177,14 @@ func calc() {
 			})
 		}
 	}
+
+	sort.Slice(overpaid, func(i, j int) bool {
+		return overpaid[i].Amount > overpaid[j].Amount
+	})
+
+	sort.Slice(underpaid, func(i, j int) bool {
+		return underpaid[i].Amount > underpaid[j].Amount
+	})
 
 	// Loop through users, which paid less than average (or nothing)
 	for _, human := range underpaid {
