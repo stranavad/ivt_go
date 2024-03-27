@@ -1,0 +1,42 @@
+{
+ "humans": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "transactions": [
+  {
+   "humanId": 1,
+   "amount": 69
+  },
+  {
+   "humanId": 2,
+   "amount": 250
+  },
+  {
+   "humanId": 1,
+   "amount": 1
+  },
+  {
+   "humanId": 1,
+   "amount": 120
+  },
+  {
+   "humanId": 4,
+   "amount": 250
+  },
+  {
+   "humanId": 4,
+   "amount": 250
+  },
+  {
+   "humanId": 7,
+   "amount": 85
+  }
+ ]
+}
